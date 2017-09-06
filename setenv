@@ -14,7 +14,7 @@ test $_ = $0 && {
             exit 1
 }
 
-test ${PWD##*/} = 'gunicorn-ansible' || {
+test ${PWD##*/} = 'donttryathome' || {
         echo ${BASH_SOURCE[*]##*/} must be sourced from an ansible dir.
             return
 }

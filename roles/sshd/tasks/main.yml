@@ -1,0 +1,8 @@
+---
+- name: Copy sudoers file
+  copy:
+    src: "80-sudoers"
+    dest: "/etc/sudoers.d/"
+    owner: "root"
+    group: "root"
+    mode: 0440
